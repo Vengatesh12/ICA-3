@@ -1,0 +1,7 @@
+# sops.yaml
+creation_rules:
+  - gcp_kms: projects/docker2gcp/locations/northamerica-northeast2/keyRings/my-keyring/cryptoKeys/my-keyring-sw
+    # Automatically encrypt YAML files
+    path_regex: '.*\.yaml$'
+    # Encrypt the 'data' field inside any matched YAML file
+    encrypted_regex: '^(secrets)$'
