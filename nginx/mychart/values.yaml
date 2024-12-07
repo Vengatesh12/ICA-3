@@ -4,7 +4,7 @@ nginx:
     app: nginx-proxy
     env: dev
   image:
-    repository: karthik8898/nginx-proxy
+    repository: vengatesh21/nginx-proxy
     tag: "latest"
     pullPolicy: IfNotPresent
   replicas: 1
